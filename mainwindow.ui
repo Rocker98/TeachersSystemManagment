@@ -55,42 +55,59 @@
       <enum>QLayout::SetMaximumSize</enum>
      </property>
      <item>
-      <widget class="QDateTimeEdit" name="dateTimeEdit">
-       <property name="cursor">
-        <cursorShape>ForbiddenCursor</cursorShape>
-       </property>
-       <property name="autoFillBackground">
-        <bool>true</bool>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-       </property>
-       <property name="readOnly">
-        <bool>true</bool>
-       </property>
-       <property name="keyboardTracking">
-        <bool>false</bool>
-       </property>
-       <property name="minimumDateTime">
-        <datetime>
-         <hour>0</hour>
-         <minute>0</minute>
-         <second>0</second>
-         <year>1764</year>
-         <month>9</month>
-         <day>14</day>
-        </datetime>
-       </property>
-       <property name="currentSection">
-        <enum>QDateTimeEdit::MonthSection</enum>
-       </property>
-       <property name="calendarPopup">
-        <bool>true</bool>
-       </property>
-       <property name="timeSpec">
-        <enum>Qt::LocalTime</enum>
-       </property>
-      </widget>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <spacer name="horizontalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QDateTimeEdit" name="dateTimeEdit">
+         <property name="cursor">
+          <cursorShape>ForbiddenCursor</cursorShape>
+         </property>
+         <property name="autoFillBackground">
+          <bool>true</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="keyboardTracking">
+          <bool>false</bool>
+         </property>
+         <property name="minimumDateTime">
+          <datetime>
+           <hour>0</hour>
+           <minute>0</minute>
+           <second>0</second>
+           <year>1764</year>
+           <month>9</month>
+           <day>14</day>
+          </datetime>
+         </property>
+         <property name="currentSection">
+          <enum>QDateTimeEdit::MonthSection</enum>
+         </property>
+         <property name="calendarPopup">
+          <bool>true</bool>
+         </property>
+         <property name="timeSpec">
+          <enum>Qt::LocalTime</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </item>
      <item>
       <spacer name="verticalSpacer">
